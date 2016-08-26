@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'Amatic';
+  src: url('../fonts/amatic/Amatic-Bold.ttf');
+}
+
+::-webkit-scrollbar {
+      width: 3px;
+}
+
+body {
+  /*background-image: url('../img/background1.jpg');*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0 6em;
+  font: 16px "Amatic";
+  letter-spacing: .1em;
+}
+body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -10;
+  opacity: 1;
+}
+body.background-loaded:after {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+#load-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.logo-intro #logo{
+  /*opacity: 0;*/
+  display: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dotted #ccc;
+  width: 80%;
+  margin: 2em auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.title {
+  color: rgb(45, 188, 190);
+}
+.title-small {
+  color: rgb(45, 188, 190);
+  font-size: 1.3em;
+  /*margin-top: 0;*/
+}
+.ct-text {
+  font-family: 'Helvetica Neue';
+  font-size: .8em;
+  padding-left: 1em;
+  font-weight: normal;
+}
+.ct-italic {
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  color: #666;
+}
+.ct-bold {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+}
+.ct-highlight {
+  font-family: 'Helvetica Neue';
+  font-size: .9em;
+}
+.menu-point {
+  width: 90%;
+  background-color: rgba(45, 188, 190,0.12);
+  background: -webkit-linear-gradient(left, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(45, 188, 190,0.12) 60%, rgba(45, 188, 190,0));
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: .4em;
+}
+.menu-point div {
+  background-image: url('../img/menu_point.png');
+  background-repeat: no-repeat;
+  margin-right: .4em;
+  padding-left: 2em;
+}
+.menu-point div *  {
+  padding: 0;
+  /*cursor: pointer;*/
+}
+.menu-point div a:hover {
+  letter-spacing: .2em;
+}
+.hidden-text {
+  display: none;
+  font-weight: normal;
+  /*margin-bottom: 0;*/
+  color: #333;
+  width: 90%;
+}
+.hascontent {
+  cursor: pointer;
+  color: #088;
+}
+                              /*  HEADER SECTION */
+#header-container, .hd-up {
+  background-color: rgba(255,255,255,0.92);
+  padding: .4em;
+  /*width: 90%;*/
+  top: 1.5em;
+  left: 6em;
+  right: 6em !important;
+  height: 6em;
+  position: fixed;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+#logo {
+  z-index: 5;
+  float: left;
+  margin: .4em 2em .4em 1.5em;
+}
+#logo img {
+  width: 6.5em;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+#title-container {
+  margin: 1em 0 1em 11.9em;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+#title-container * {
+  margin: 0;
+}
+#header-title {
+  transition: all .1s ease-in-out .1s;
+  -moz-transition: all .1s ease-in-out .1s;
+  -webkit-transition: all .1s ease-in-out .1s;
+}
+#sub-title {
+  margin-top: .3em;
+  font-size: 1.1em;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: .05em;
+  transition: all .1s ease-in-out .1s;
+  -moz-transition: all .1s ease-in-out .1s;
+  -webkit-transition: all .1s ease-in-out .1s;
+}
+
+                            /* SIDE MENU SECTION */
+#side-menu, .sm-up {
+  position: fixed;
+  background-color: rgba(255,255,255,0.92);
+  top: 9.6em;
+  width: 8em;
+  margin: 0;
+  padding: .7em 1.2em;
+  transition: top .1s ease-in-out;
+  -moz-transition: top .1s ease-in-out;
+  -webkit-transition: top .1s ease-in-out;
+  z-index: 10;
+}
+#menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6em;
+}
+#menu-list .menu-item {
+  margin: .4em 0;
+  border: 2px dashed rgba(45, 188, 190, 0);
+  padding: .3em;
+  padding-top: .1em;
+  /*cursor: pointer;*/
+}
+#menu-list .menu-item:hover {
+  border: 2px dashed rgba(45, 188, 190, 0.3);
+}
+
+#menu-list .active {
+  border: 2px dashed rgba(45, 188, 190, 1);
+}
+                            /* MAIN CONTENT SECTION */
+
+
+#content {
+  background-color: rgba(255,255,255,0.92);
+  /*padding: 3em;*/
+}
+
+#content.logo-intro {
+  background-color: rgba(255,255,255,0);
+}
+
+#home-screen {
+  text-align: center;
+}
+#home-screen img{
+  margin: 0 auto;
+  width: 90%;
+  /*background: -webkit-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Safari 5.1 to 6.0 */*/
+  /*background: -o-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Opera 11.6 to 12.0 */*/
+  /*background: -moz-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Firefox 3.6 to 15 */*/
+  /*background: radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Standard syntax */*/
+  /*border-radius: 50%;*/
+}
+
+.content-text {
+  display: inline-block;
+  vertical-align: top;
+
+
+  width: 100%;
+}
+
+.content-text h1 {
+  margin-top: 0;
+}
+.ct-text {
+  letter-spacing: .02em;
+}
+.ct-list {
+  list-style: none;
+  padding: 0;
+}
+.ct-list li {
+  margin: 1em 0;
+}
+.ct-big {
+  font-family: "Helvetica Neue";
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#portrait img{
+  float: right;
+  width: 36%;
+  padding: 1em;
+}
+
+        /* CONTACT CONTAINER */
+#contact-container {
+  text-align: center;
+  padding-top: 2em;
+}
+
+#phone-container {
+  background-image: url('../img/telefon_small.png');
+  background-repeat: no-repeat;
+  width: 14em;
+  height: 3em;
+  padding-left: 5em;
+  margin: 2em auto 1em auto;
+  text-align: left;
+}
+#appointments {
+  width: 30em;
+  /*border-top: 1px solid #ddd;*/
+  /*height: 3em;*/
+  margin: 0 auto;
+  /*display: inline-table;*/
+}
+.appointment-box {
+  display: inline-block;
+  text-align: center;
+  margin: 0 1em;
+  padding: .4em 1em;
+  border: 1px dashed #ddd;
+  background-color: #fff;
+  /*width: 35%;*/
+}
+.appointment-box table {
+  font-family: 'Helvetica Neue';
+  font-size: .9em;
+  text-align: left;
+}
+#directions-container {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+}
+.directions-box {
+  width: 80%;
+  /*height: 36px;*/
+  padding-top: 3em;
+  margin: 2em auto;
+  text-align: left;
+
+}
+
+
+#directions-train {
+  background-image: url('../img/train_small.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  /*height: 160px;*/
+}
+#directions-car {
+  background-image: url('../img/car_small.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  /*height: 320px;*/
+}
+
+#map-container {
+  width: 80%;
+  margin: 1em auto;
+}
+
+#google-map {
+  border: 1px solid #ccc;
+  position: relative;
+  padding-bottom: 65%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+#map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

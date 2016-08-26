@@ -1,0 +1,97 @@
+.carousel {
+  /*width: 80%;*/
+  margin: 0 auto;
+  text-align: center;
+
+}
+.slick-prev:before, .slick-next:before {
+    color:rgba(45, 188, 190, 0.6) !important;
+}
+.carousel-item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*width: 100%;*/
+  height: 20em;
+  /*height: 0;
+  padding-top: 66.64%;*/
+  display: table;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;
+}
+.carousel-text {
+  bottom: 0;
+  min-height: 80px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  /*z-index: 2;*/
+  background-color: #fff;
+}
+.carousel-item p {
+  font-family: Helvetica, Arial;
+  color: #eee;
+  text-shadow: 0 0 1px #000;
+  font-size: 1.6em;*/
+}
+#c-item1 {
+  background-image: url('../img/carousel/praxis1.jpg');
+}
+#c-item2 {
+  background-image: url('../img/carousel/praxis2.jpg');
+}
+#c-item3 {
+  background-image: url('../img/carousel/praxis3.jpg');
+}
+#c-item4 {
+  background-image: url('../img/carousel/praxis4.jpg');
+}
+#c-item5 {
+  background-image: url('../img/carousel/praxis5.jpg');
+}
+
+#h-item1 {
+  background-image: url('../img/carousel/20140803_104923.jpg');
+}
+#h-item2 {
+  background-image: url('../img/carousel/20151022_144259.jpg');
+}
+#h-item3 {
+  background-image: url('../img/carousel/20160217_133825.jpg');
+}
+#h-item4 {
+  background-image: url('../img/carousel/20160217_135429.jpg');
+}
+#h-item5 {
+  background-image: url('../img/carousel/20160316_133052.jpg');
+}
+/*
+.paginator{
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+}
+.paginator li{
+  margin-top: 20px;
+  position: relative;
+  float: left;
+
+  margin-right: 20px;
+}
+.prev{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/arrows.png') no-repeat;
+}
+
+.next{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/arrows.png') no-repeat;
+}*/
