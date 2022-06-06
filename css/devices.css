@@ -272,7 +272,12 @@
     border-top-left-radius: .4em;
     border-bottom-left-radius: .4em;
   }
-
+  #disclaimer-container {
+    height: auto;
+  }
+  #disclaimer {
+    margin: 0 auto 0;
+  }
   .content-text .title {
     text-align: center;
     margin-top: .2em;

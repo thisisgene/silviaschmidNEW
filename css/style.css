@@ -230,11 +230,31 @@ a {
 #home-screen img{
   margin: 0 auto;
   width: 90%;
-  /*background: -webkit-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Safari 5.1 to 6.0 */*/
-  /*background: -o-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Opera 11.6 to 12.0 */*/
-  /*background: -moz-radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* For Firefox 3.6 to 15 */*/
-  /*background: radial-gradient(rgba(10,10,10,0.2) 40%, rgba(10,10,10,0) 60%); /* Standard syntax */*/
-  /*border-radius: 50%;*/
+
+}
+
+                /* DISCLAIMER */
+#disclaimer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  position: absolute;
+}
+#disclaimer {
+  width: 100%;
+  max-width: 900px;
+  padding: 3rem;
+  margin: 3rem auto 0;
+  background: rgba(135, 179, 183, .9);
+  text-align: center;
+}
+
+#disclaimer p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 .content-text {
@@ -342,7 +362,7 @@ a {
 #google-map {
   border: 1px solid #ccc;
   position: relative;
-  padding-bottom: 65%; // This is the aspect ratio
+  padding-bottom: 65%; 
   height: 0;
   overflow: hidden;
 }
